@@ -2,38 +2,6 @@ public class Spartan {
 
     private String nombre;
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public int getEscudo() {
-        return escudo;
-    }
-
-    public String getArmaPrincipal() {
-        return armaPrincipal;
-    }
-
-    public void setArmaPrincipal(String armaPrincipal) {
-        this.armaPrincipal = armaPrincipal;
-    }
-
-    public void setEscudo(int escudo) {
-        this.escudo = escudo;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getSalud() {
-        return salud;
-    }
-
-    public void setSalud(int salud) {
-        this.salud = salud;
-    }
-
     private int salud;
     private int escudo;
     private String armaPrincipal;
@@ -75,5 +43,43 @@ public class Spartan {
             System.out.println( nombre+ " se detuvo");
         }
     }
+
+    private void ConsultaCortana(){
+        System.out.println(" esta consultando...");
+    }
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEscudo() {
+        return escudo;
+    }
+
+    public String getArmaPrincipal() {
+        return armaPrincipal;
+    }
+
+    public void setArmaPrincipal(String armaPrincipal) {
+        this.armaPrincipal = armaPrincipal;
+    }
+
+    public void setEscudo(int escudo) {
+        this.escudo = escudo;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getSalud() {
+        return salud;
+    }
+
+    public void setSalud(int salud) {
+        this.salud = salud;
+    }
+
 
 }//llave de la clase
