@@ -4,7 +4,7 @@ public static void main(String[] args) {
 
 
    AccionesCajero caja1= new AccionesCajero(0,0,"temporal",0);
-   
+
    caja1.setSaldo(Double.parseDouble(JOptionPane.showInputDialog("Ingrese el saldo")+ caja1.getSaldo()));
    caja1.setNumeroCuenta(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero de cuenta")+caja1.getNumeroCuenta()));
    caja1.setTitular(JOptionPane.showInputDialog("Ingrese el titular")+ caja1.getTitular());
