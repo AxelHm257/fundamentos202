@@ -1,12 +1,13 @@
 import javax.swing.JOptionPane;
 
 public class AccionesCajero {
-    double saldo;
-    String numeroCuenta;
-    String titular;
-    int edad;
+    private double saldo;
+    private int numeroCuenta;
+    private String titular;
+    private int edad;
 
-    public AccionesCajero(double saldoInicial, String numeroCuenta, String titular, int edad) {
+
+    public AccionesCajero(double saldoInicial, int numeroCuenta, String titular, int edad) {
         this.saldo = saldoInicial;
         this.numeroCuenta = numeroCuenta;
         this.titular = titular;
@@ -37,5 +38,36 @@ public class AccionesCajero {
 
     public void consultarDatosCuenta() {
         JOptionPane.showMessageDialog(null, "Datos de la cuenta:\nNúmero de Cuenta: " + numeroCuenta + "\nTitular: " + titular + "\nEdad: " + edad + "\nSaldo actual: " + saldo);
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    public int getNumeroCuenta() {
+        return numeroCuenta;
+    }
+
+    public void setNumeroCuenta(int ingreseElNumeroDeCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 }
